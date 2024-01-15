@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "gw2-sharing-is-caring"
+version = "0.1.0"
+description = ""
+authors = ["ZahraAstrom <zahraabdo1@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "GW2_Sharing_is_Caring"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.108.0"
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
+sqlalchemy = "^2.0.25"
+alembic = "^1.13.1"
+psycopg2-binary = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
